@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+    background: linear-gradient(70deg, blue, purple, pink);
+    overflow: hidden;
+}
+
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.Texto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Texto h2 {
+    font-size: 5vw; /* Escala el tamaño de la fuente en función del ancho de la vista */
+    color: #00796b;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra para mayor legibilidad */
+}
+
+@media (max-width: 600px) {
+    .Texto h2 {
+        font-size: 6vw; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
